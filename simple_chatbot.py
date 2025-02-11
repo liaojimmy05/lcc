@@ -10,8 +10,7 @@ bot_responses = {
       "I'm a pretty easygoing and optimistic person, but I also like paying attention to details and making sure things are done right.\n\n"
       "In my free time, I enjoy playing games like Valorant and Apex keep that strategic thinking and reaction speed sharp! "
       "I also like staring at the sky and letting my mind wander (some call it daydreaming, I call it creativity in progress). "
-      "And of course, coffee is a must—every day starts with a good cup to get me going!")
-,
+      "And of course, coffee is a must—every day starts with a good cup to get me going!"),
     
     "2": "[Education]\n- Master's in Data Science, University of Sydney\n- Bachelor's in Computer Science, Soochow University",
     
