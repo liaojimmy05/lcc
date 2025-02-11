@@ -931,7 +931,7 @@
                 chatInput.value = "";
 
                 // 發送請求到 Flask API
-                fetch("http://127.0.0.1:5000/chat", {
+                fetch("https://flask-chatbot.onrender.com/chat", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ question: question })
@@ -962,7 +962,7 @@
             });
         
             // 初始請求，顯示選單
-            fetch("http://127.0.0.1:5000/chat", {
+            fetch("https://flask-chatbot.onrender.com/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ question: "menu" })
