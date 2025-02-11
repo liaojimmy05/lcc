@@ -1,16 +1,17 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import os  # ✅ 新增 os 模組來獲取 Render 指定的 PORT
 
-app = Flask(__name__)
+app = Flask(__name__)  # ✅ 確保這裡 `app` 變數名稱沒錯
 CORS(app)
 
 bot_responses = {
     "1": ("[Casual Introduction]\n"
-      "Hi! I'm ChunCheng Liao (Jimmy). My MBTI type is INFJ.\n"
-      "I'm a pretty easygoing and optimistic person, but I also like paying attention to details and making sure things are done right.\n\n"
-      "In my free time, I enjoy playing games like Valorant and Apex keep that strategic thinking and reaction speed sharp! "
-      "I also like staring at the sky and letting my mind wander (some call it daydreaming, I call it creativity in progress). "
-      "And of course, coffee is a must—every day starts with a good cup to get me going!"),
+          "Hi! I'm ChunCheng Liao (Jimmy). My MBTI type is INFJ.\n"
+          "I'm a pretty easygoing and optimistic person, but I also like paying attention to details and making sure things are done right.\n\n"
+          "In my free time, I enjoy playing games like Valorant and Apex keep that strategic thinking and reaction speed sharp! "
+          "I also like staring at the sky and letting my mind wander (some call it daydreaming, I call it creativity in progress). "
+          "And of course, coffee is a must—every day starts with a good cup to get me going!"),
     
     "2": "[Education]\n- Master's in Data Science, University of Sydney\n- Bachelor's in Computer Science, Soochow University",
     
@@ -35,7 +36,6 @@ bot_responses = {
           "The entire process took me about a week, with 3-4 days dedicated to coding and the rest focused on content planning and layout design.")
 }
 
-
 menu_text = """
 1⃣  [About Me]  
 2⃣  [Education]  
@@ -44,6 +44,10 @@ menu_text = """
 5⃣  [University Project]  
 6⃣  [Reason for designing this website]  
 🔹 Type a number (e.g., "1" for About Me)."""
+
+@app.route("/")
+def home():
+    return "Chatbot is running on Render!"  # ✅ Render 會用這個測試 API 是否正常運行
 
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -57,4 +61,5 @@ def chat():
     return jsonify({"answer": response.replace("\n", "<br>")})  # 確保 \n 轉換為 <br>
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))  # ✅ 使用 Render 指定的 PORT
+    app.run(host="0.0.0.0", port=port, debug=True)  # ✅ `0.0.0.0` 讓外部可訪問
