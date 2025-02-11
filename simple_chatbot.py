@@ -49,7 +49,10 @@ menu_text = """
 def home():
     return "Chatbot is running on Render!"  # ✅ Render 會用這個測試 API 是否正常運行
 
-@app.route("/chat", methods=["POST"])
+@app.route("/chat", methods=["GET", "POST"])
+def chat():
+    if request
+
 def chat():
     data = request.json
     user_input = data.get("question", "").strip()
