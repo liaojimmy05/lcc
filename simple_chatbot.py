@@ -40,6 +40,8 @@ bot_responses = {
 }
 
 menu_text = """
+🎉 I am awake! 🎉
+
 1⃣  [About Me]  
 2⃣  [Education]  
 3⃣  [Experience]  
