@@ -13,22 +13,25 @@ bot_responses = {
           "I also like staring at the sky and letting my mind wander (some call it daydreaming, I call it creativity in progress). "
           "And of course, coffee is a must—every day starts with a good cup to get me going!"),
     
-    "2": "[Education]\n- Master's in Data Science, University of Sydney\n- Bachelor's in Computer Science, Soochow University",
+    "2": "[Education]\n- Master's in Data Science with a specialization in Machine Learning, University of Sydney\n- Bachelor's in Computer Science and Information Management, Soochow University",
     
     "3": ("[Experience]\n"
           "During my master's, I worked on various academic projects, including steel defect detection, "
           "cardiovascular disease prediction, and more. These experiences helped me strengthen my skills in "
           "data analysis, machine learning, and problem-solving."),
+
     
     "4": ("[Master Project]\n"
           "My master's project focused on wildfire prediction in Canada using Machine Learning techniques. "
           "This experience taught me how to apply theoretical knowledge to real-world challenges, making my "
           "1.5 years in the master's program incredibly valuable."),
+
     
     "5": ("[University Project]\n"
-          "Dementia Education Game (MEMENTO). This project not only deepened my understanding of dementia but also "
+          "My university's project was the Dementia Education Game (MEMENTO). This project not only deepened my understanding of dementia but also "
           "taught me the importance of teamwork and collaboration. It was a great experience in combining technology "
           "with healthcare education."),
+
     
     "6": ("[Reason for designing this website]\n"
           "I built this website entirely by self-learning. I developed it using JavaScript and sought assistance from "
