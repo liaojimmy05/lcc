@@ -58,7 +58,7 @@ def home():
 
 @app.route("/chat", methods=["GET", "POST"])
 def chat():
-    if request
+    if request:
 
 def chat():
     data = request.json
