@@ -939,7 +939,7 @@
                 chatInput.value = "";
 
                 // 發送請求到 Flask API
-                fetch("https://lcc-24c2.onrender.com", {  // ✅ 改成正確的 API
+                fetch("https://lcc-3.onrender.com", {  // ✅ 改成正確的 API
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ question: question })
@@ -970,7 +970,7 @@
             });
         
             // 初始請求，顯示選單
-            fetch("https://lcc-24c2.onrender.com", {  // ✅ 改成正確的 API
+            fetch("https://lcc-3.onrender.com", {  // ✅ 改成正確的 API
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ question: "menu" })
