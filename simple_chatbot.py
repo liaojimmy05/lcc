@@ -58,17 +58,16 @@ def home():
 
 @app.route("/chat", methods=["GET", "POST"])
 def chat():
-    if request:
+    if request:  # 確保 if 條件正確
+        data = request.json
+        user_input = data.get("question", "").strip()
 
-def chat():
-    data = request.json
-    user_input = data.get("question", "").strip()
+        if user_input == "menu":
+            return jsonify({"answer": menu_text.replace("\n", "<br>")})  # 確保 \n 轉換為 <br>
 
-    if user_input == "menu":
-        return jsonify({"answer": menu_text.replace("\n", "<br>")})  # 確保 \n 轉換為 <br>
-    
-    response = bot_responses.get(user_input, "⚠️ Invalid choice! Please enter a number from 1 to 6.")
-    return jsonify({"answer": response.replace("\n", "<br>")})  # 確保 \n 轉換為 <br>
+        response = bot_responses.get(user_input, "⚠️ Invalid choice! Please enter a number from 1 to 6.")
+        return jsonify({"answer": response.replace("\n", "<br>")})  # 確保 \n 轉換為 <br>
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # ✅ 使用 Render 指定的 PORT
