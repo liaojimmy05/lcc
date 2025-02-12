@@ -40,15 +40,13 @@ bot_responses = {
 }
 
 menu_text = """
-🎉 I am awake! 🎉  
-
+🎉 I am awake! 🎉 
 1⃣  [About Me]  
 2⃣  [Education]  
 3⃣  [Experience]  
 4⃣  [Master Project]  
 5⃣  [University Project]  
 6⃣  [Reason for designing this website]  
-
 🔹 Type a number (e.g., "1" for About Me)."""
 
 
