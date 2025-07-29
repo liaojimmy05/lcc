@@ -193,48 +193,45 @@
 
 
 
-        /* Chatbot 訊息顯示區域 */
+        /* ====== Chatbot 專屬樣式區塊，註解掉即可 ====== */
+        /*
         #chat-box {
-            flex-grow: 1; /* 讓 chat-box 佔據剩餘的可用空間，使其可以隨容器伸縮 */
-            max-height: 500px; /* 限制最大高度，避免訊息區域過長 */
-            overflow-y: auto; /* 啟用垂直滾動條，當訊息過多時可以滾動查看 */
-            padding: 12px; /* 內邊距，讓內容不會緊貼邊界 */
-            border-bottom: 1px solid #bbb; /* 添加底部邊框，區分訊息區域與輸入框 */
-            font-size: 18px; /* 讓訊息文字更清楚 */
-            background: #ffffff; /* 設定訊息區域背景為白色，確保可讀性 */
-            border-radius: 8px; /* 為對話框添加 8px 圓角，使界面更柔和 */
+            flex-grow: 1;
+            max-height: 500px;
+            overflow-y: auto;
+            padding: 12px;
+            border-bottom: 1px solid #bbb;
+            font-size: 18px;
+            background: #ffffff;
+            border-radius: 8px;
         }
-
-        /* Chatbot 輸入框 */
+        
         #chat-input {
-            width: calc(100% - 20px); /* 讓輸入框填滿容器，但保留 10px 左右間距 */
-            padding: 14px; /* 增加內邊距，使輸入體驗更舒適 */
-            margin-top: 10px; /* 與 chat-box 保持 10px 間距 */
-            border: 1px solid #aaa; /* 設定輸入框邊框顏色 */
-            border-radius: 6px; /* 增加圓角，讓輸入框更美觀 */
-            font-size: 18px; /* 讓輸入的文字較大，提升可讀性 */
+            width: calc(100% - 20px);
+            padding: 14px;
+            margin-top: 10px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            font-size: 18px;
         }
-
-        /* Chatbot 送出按鈕 */
+        
         #chat-container button {
-            width: 100%; /* 讓按鈕寬度填滿容器 */
-            padding: 14px; /* 內邊距，增加點擊範圍，提高使用體驗 */
-            background: #6a0dad; /* 設定紫色背景，使按鈕與 Chatbot 配色一致 */
-            color: #fff; /* 文字顏色設為白色，提升對比度 */
-            border: none; /* 移除預設邊框，使按鈕更簡潔 */
-            margin-top: 10px; /* 與輸入框保持間距 */
-            border-radius: 6px; /* 添加 6px 圓角，使按鈕更柔和 */
-            cursor: pointer; /* 設定鼠標懸停時為可點擊狀態 */
-            font-size: 18px; /* 讓按鈕文字較大，方便點擊 */
-            transition: background 0.3s; /* 添加過渡效果，讓顏色變化更順滑 */
+            width: 100%;
+            padding: 14px;
+            background: #6a0dad;
+            color: #fff;
+            border: none;
+            margin-top: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s;
         }
-
-        /* 滑鼠懸停時的按鈕樣式 */
+        
         #chat-container button:hover {
-            background: #5a0cac; /* 當滑鼠移上去時，按鈕顏色變深，提高互動感 */
+            background: #5a0cac;
         }
-
-        /* Chatbot 縮小與展開的樣式 */
+        
         #chat-wrapper {
             position: fixed;
             bottom: 20px;
@@ -243,8 +240,7 @@
             align-items: center;
             transition: all 0.3s ease-in-out;
         }
-
-        /* 控制按鈕的樣式 */
+        
         #toggle-chat {
             background-color: #6a0dad;
             color: white;
@@ -256,13 +252,11 @@
             margin-right: 10px;
             transition: transform 0.3s ease;
         }
-
-        /* 當 Chatbot 被隱藏時，改變箭頭方向 */
+        
         #chat-wrapper.minimized #toggle-chat {
             transform: rotate(180deg);
         }
-
-        /* Chatbot 本體 */
+        
         #chat-container {
             width: 650px;
             background: #f9f0ff;
@@ -275,11 +269,11 @@
             flex-direction: column;
             transition: all 0.3s ease-in-out;
         }
-
-        /* 當 Chatbot 被隱藏時，只影響 chat-container */
+        
         #chat-wrapper.minimized #chat-container {
             display: none;
         }
+        */
 
 
 
@@ -337,22 +331,27 @@
                     <div class="home-title" style="font-size: 48px; font-weight: bold; margin-bottom: 20px; color: #4c4c6d;">
                         Chuncheng Liao
                     </div>
-                                        
+                              
                     <!-- Chatbot 容器 -->
                     <!-- Chatbot Wrapper -->
-                    <div id="chat-wrapper">
-                        <button id="toggle-chat">💬</button><!-- 控制 Chatbot 顯示/隱藏的按鈕 -->
-                        <div id="chat-container">
-                            <div id="chat-box">
-                                <p>💬 Welcome to ChunCheng Liao's Chatbot! <br>
-                                    Please enter a number to learn more about me.</p>
-                                <p>⚠️ Heads up! My chatbot runs on a free Render instance, which goes to sleep if inactive. 
-                                    If you don't get a response, it might just be waking up. I try to keep my site live as much as possible!</p>
+                    <!-- <div id="">
+                    <!-- 
+                        Chatbot 容器（已註解）
+                        <div id="">
+                            <button id="toggle-chat">💬</button>
+                            <div id="chat-container">
+                                <div id="chat-box">
+                                    <p>💬 Welcome to ChunCheng Liao's Chatbot! <br>
+                                        Please enter a number to learn more about me.</p>
+                                    <p>⚠️ Heads up! My chatbot runs on a free Render instance, which goes to sleep if inactive. 
+                                        If you don't get a response, it might just be waking up. I try to keep my site live as much as possible!</p>
+                                </div>
+                                <input type="text" id="chat-input" placeholder="Type a number (1-6) or 'menu' to see options...">
+                                <button id="send-btn">Send</button>
                             </div>
-                            <input type="text" id="chat-input" placeholder="Type a number (1-6) or 'menu' to see options...">
-                            <button id="send-btn">Send</button>
-                        </div>
-                    </div>
+                        </div> 
+                    -->
+
 
 
                     <!-- 引入 JavaScript -->
@@ -929,7 +928,7 @@
 
 
         document.addEventListener("DOMContentLoaded", function () {
-            const chatWrapper = document.getElementById("chat-wrapper");
+            const chatWrapper = document.getElementById("");
             const toggleChatBtn = document.getElementById("toggle-chat");
 
             toggleChatBtn.addEventListener("click", function () {
@@ -998,6 +997,13 @@
             });
         });
     </script>
+    
+    <script>
+      window.chtlConfig = { chatbotId: "4327689595" }
+    </script>
+    <script async data-id="4327689595" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+    
 
+    
 </body>
 </html>
