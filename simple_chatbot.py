@@ -15,17 +15,19 @@ bot_responses = {
     
     "2": "[Education]\n- Master's in Data Science with a specialization in Machine Learning, University of Sydney\n- Bachelor's in Computer Science and Information Management, Soochow University",
     
-    "3": ("[Experience]\n"
+    "3": ("[Master Experience]\n"
           "During my master's, I worked on various academic projects, including steel defect detection, "
           "cardiovascular disease prediction, and more. These experiences helped me strengthen my skills in "
           "data analysis, machine learning, and problem-solving."),
 
     
-    "4": ("[Master Project]\n"
-          "My master's project focused on wildfire prediction in Canada using Machine Learning techniques. "
-          "This experience taught me how to apply theoretical knowledge to real-world challenges, making my "
-          "1.5 years in the master's program incredibly valuable."),
-
+    "4": ("[Data Scientist Intern]\n"
+          "As a Data Scientist Intern at FYTO, I helped build a wildfire prediction system for Canada’s SilverStar region. "
+          "Beyond just writing code, this project pushed me to collaborate closely with teammates, think critically about messy real-world data, "
+          "and communicate effectively with an industry partner. It was a transformative experience that made data science feel genuinely impactful."),
+    
+    
+        
     
     "5": ("[University Project]\n"
           "My university's project was the Dementia Education Game (MEMENTO). This project not only deepened my understanding of dementia but also "
@@ -43,8 +45,8 @@ menu_text = """
 🎉 I am awake! 🎉 
 1⃣  [About Me]  
 2⃣  [Education]  
-3⃣  [Experience]  
-4⃣  [Master Project]  
+3⃣  [Master Experience] 
+4⃣  [Data Scientist Intern]  
 5⃣  [University Project]  
 6⃣  [Reason for designing this website]  
 🔹 Type a number (e.g., "1" for About Me)."""
