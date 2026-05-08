@@ -191,7 +191,23 @@
             text-align: left; /* 讓內容左對齊，確保對齊效果 */
         }
 
-
+        @keyframes runAnimal1 {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(900px);
+            }
+        }
+        
+        @keyframes runAnimal2 {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(920px);
+            }
+        }
 
         /* ====== Chatbot 專屬樣式區塊，註解掉即可 ====== */
         /*
@@ -323,13 +339,10 @@
             </div>
         </div>
 
-        
+    
         <!-- 右邊內容 -->
         <div class="right">
             <!-- Home -->
-
-
-            
             <div id="home" class="content active">
                 <div class="home-container" style="font-family: 'Georgia', serif; text-align: center;">
                     <!-- 名字 -->
@@ -356,23 +369,19 @@
                             </div>
                         </div> 
                     -->
-
-
-
+        
                     <!-- 引入 JavaScript -->
                     <script src="static/chatbot.js"></script>
-
-
-
+        
                     <!-- 職稱，動畫切換 -->
                     <div class="home-subtitle" style="font-size: 22px; font-weight: 500; color: #6a0dad; margin-bottom: 30px;">
                         <span class="active">Data Scientist</span>
                         <span>Machine Learning Engineer</span>
                     </div>
+        
                     <!-- 個人信息 -->
                     <div class="personal-info" style="font-size: 18px; line-height: 2; color: #333; text-align: left; margin: 30px auto 0 auto; width: 80%;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
-                            
                             <span style="font-weight: bold; color: #6a0dad;">Address (Taiwan)</span>
                             <span>Wenshan Dist., Taipei City 116016, Taiwan (R.O.C.)</span>
                         </div>
@@ -396,6 +405,118 @@
                             <span style="font-weight: bold; color: #6a0dad;">Freelance</span>
                             <span>Available</span>
                         </div>
+                    </div>
+        
+                    <!-- Cute Home Visual Section -->
+                    <div style="margin-top: 30px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+        
+                        <div style="
+                            font-family: 'Georgia', serif;
+                            font-size: 22px;
+                            font-weight: bold;
+                            color: #6a0dad;
+                            margin-bottom: 12px;
+                        ">
+                            A Little Corner of My World
+                        </div>
+        
+                        <div style="
+                            font-family: 'Georgia', serif;
+                            font-size: 16px;
+                            color: #666;
+                            text-align: center;
+                            max-width: 700px;
+                            line-height: 1.8;
+                            margin-bottom: 25px;
+                            padding: 0 20px;
+                        ">
+                            Exploring data, building models, and turning ideas into meaningful projects — with a little curiosity and creativity along the way.
+                        </div>
+        
+                        <div style="
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 18px;
+                            width: 85%;
+                            max-width: 900px;
+                            margin-bottom: 28px;
+                        ">
+                            <div style="
+                                background: #fff8fc;
+                                border-radius: 18px;
+                                padding: 18px;
+                                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                                text-align: center;
+                            ">
+                                <div style="font-size: 30px; margin-bottom: 8px;">📊</div>
+                                <div style="font-size: 17px; font-weight: bold; color: #4c4c6d; margin-bottom: 8px;">Data Science</div>
+                                <div style="font-size: 14px; color: #666; line-height: 1.6;">
+                                    Turning raw data into clear insights and useful decisions.
+                                </div>
+                            </div>
+        
+                            <div style="
+                                background: #f8fbff;
+                                border-radius: 18px;
+                                padding: 18px;
+                                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                                text-align: center;
+                            ">
+                                <div style="font-size: 30px; margin-bottom: 8px;">🤖</div>
+                                <div style="font-size: 17px; font-weight: bold; color: #4c4c6d; margin-bottom: 8px;">Machine Learning</div>
+                                <div style="font-size: 14px; color: #666; line-height: 1.6;">
+                                    Building practical models for prediction, analysis, and real-world use.
+                                </div>
+                            </div>
+        
+                            <div style="
+                                background: #fffdf6;
+                                border-radius: 18px;
+                                padding: 18px;
+                                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                                text-align: center;
+                            ">
+                                <div style="font-size: 30px; margin-bottom: 8px;">✨</div>
+                                <div style="font-size: 17px; font-weight: bold; color: #4c4c6d; margin-bottom: 8px;">Creative Projects</div>
+                                <div style="font-size: 14px; color: #666; line-height: 1.6;">
+                                    Combining technical thinking with creativity and design.
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div style="
+                            position: relative;
+                            width: 100%;
+                            max-width: 700px;
+                            height: 80px;
+                            overflow: hidden;
+                            margin-top: 2px;
+                        ">
+                            <div style="
+                                position: absolute;
+                                left: -120px;
+                                top: 8px;
+                                font-size: 38px;
+                                animation: runAnimal1 12s linear infinite;
+                            ">🐰</div>
+        
+                            <div style="
+                                position: absolute;
+                                left: -160px;
+                                top: 36px;
+                                font-size: 34px;
+                                animation: runAnimal2 16s linear infinite;
+                            ">🐻</div>
+        
+                            <div style="
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 2px;
+                                background: linear-gradient(to right, transparent, #d8c8f0, transparent);
+                            "></div>
+                        </div>
+        
                     </div>
                 </div>
             </div>
