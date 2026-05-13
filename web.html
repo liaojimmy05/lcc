@@ -10,22 +10,28 @@
         
         /* 整個頁面使用 Flexbox 排版，分為左邊和右邊兩部分 */
         .container {
-            display: flex; /* 使用 Flexbox 進行排版，使子元素能夠並排顯示 */
-            height: 100vh; /* 設定容器高度為整個視窗高度 */
-            margin: 0; /* 移除預設的外邊距，確保佔滿整個視窗 */
-            font-family: Arial, sans-serif; /* 設定頁面字體為 Arial 或 sans-serif */
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f1f8;
         }
-
-        /* 左邊區塊樣式 */
+        
         .left {
-            flex: 1; /* 左側區塊佔據 1 份比例的空間 */
-            background-color: #f9f9f9; /* 設定背景顏色為淺灰色 */
-            display: flex; /* 使用 Flexbox 讓內部元素排列整齊 */
-            flex-direction: column; /* 內容垂直排列 */
-            align-items: center; /* 讓內容水平置中對齊 */
-            justify-content: flex-start; /* 內容從上方開始排列 */
-            padding: 20px 0; /* 設定上下內邊距 20px，左右為 0 */
-            border-right: 1px solid #ccc; /* 在右側添加細灰色分隔線 */
+            flex: 1;
+            background-color: #eee8f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px 0;
+            border-right: 1px solid #d8cfe8;
+        }
+        
+        .right {
+            flex: 2;
+            padding: 20px;
+            background-color: #f7f4fb;
         }
 
         /* 圖片樣式 */
